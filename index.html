@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
-    <title>タイトル</title>
-    <meta name="description" content="" />
+    <title>ExciteCode</title>
+    <meta
+      name="description"
+      content="ExciteCodeでは、“いいキッチン”を通じて「心地いい家」「笑顔あふれる家」「家族が集まる家」を創造します。検討されている方は一度はご覧下さい。"
+    />
     <meta name="keywords" content="" />
     <!-- ogp -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:title" content="ExciteCode" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="#" />
+    <meta property="og:site_name" content="ExciteCode" />
+    <meta
+      property="og:description"
+      content="ExciteCodeでは、“いいキッチン”を通じて「心地いい家」「笑顔あふれる家」「家族が集まる家」を創造します。検討されている方は一度はご覧下さい。"
+    />
     <meta name="twitter:card" content="summary" />
     <!-- ファビコン -->
     <link rel="icon" href="#" />
@@ -24,16 +30,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
 
     <!-- css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- JavaScript -->
     <script
@@ -42,25 +44,17 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
-      defer
-    ></script>
     <script src="/js/script.js" defer></script>
   </head>
 
   <body>
     <header class="header js-header">
       <div class="header__inner">
-        <h1 class="header__title">
-          <a href="index.html"
-            ><img src="/images/top/logo-img.svg" alt="" class="header__logo"
-          /></a>
-        </h1>
+        <h1 class="header__title">ExciteCode</h1>
         <nav class="header__nav md-none">
           <ul class="header__items">
             <li class="header__item">
-              <a href="#about" class="header__link">About</a>
+              <a href="#vision" class="header__link">Vision</a>
             </li>
 
             <li class="header__item">
@@ -72,7 +66,9 @@
             </li>
           </ul>
         </nav>
-        <a href="#contact" class="header__contact button md-none">Contact</a>
+        <a href="#contact" class="header__contact contact-button md-none"
+          >Contact</a
+        >
       </div>
 
       <div class="hamburger js-hamburger md-show">
@@ -85,7 +81,7 @@
         <div class="drawer-menu__inner">
           <ul class="drawer-menu__items">
             <li class="drawer-menu__item">
-              <a href="#about" class="drawer-menu__link">About</a>
+              <a href="#vision" class="drawer-menu__link">Vision</a>
             </li>
 
             <li class="drawer-menu__item">
@@ -95,139 +91,130 @@
             <li class="drawer-menu__item">
               <a href="#news" class="drawer-menu__link">News</a>
             </li>
-
-            <li class="drawer-menu__item">
-              <a href="#contact" class="drawer-menu__link">Contact</a>
-            </li>
           </ul>
+          <a href="#contact" class="drawer-menu__contact contact-button"
+            >Contact</a
+          >
         </div>
       </div>
     </header>
 
     <main>
-      <!-- fv -->
-      <div class="contact-fv">
-        <h1 class="contact-fv__title">Contact</h1>
+      <div class="mv">
+        <p class="mv__heading">
+          いいキッチンには<br />
+          笑顔が集まる
+        </p>
       </div>
-
-      <!-- contact -->
-      <div class="contact-contact">
-        <div class="contact-contact__inner">
-          <p class="contact-contact__text">
-            当店へのお問い合わせは下記フォームより受け付けております。<br
-              class="md-none"
-            />担当者が確認後、折り返しご連絡させていただきます。
+      <!-- vision -->
+      <section id="vision" class="vision">
+        <div class="vision__inner inner">
+          <h2 class="vision__heading heading">Vision</h2>
+          <p class="vision__title">
+            自然と家族が集まる、<br />
+            そして笑顔が集まる。<br class="md-show" />そんなキッチンを。
           </p>
 
-          <form action="" class="contact-form form">
-            <div class="form__inner">
-              <ul class="form__list">
-                <li class="form__item">
-                  <dl class="form__align">
-                    <dt class="form__label">
-                      <p class="form__label-text">お名前<span>*</span></p>
-                    </dt>
-                    <dd class="form__input">
-                      <input
-                        type="text"
-                        class="form__input-text"
-                        name="お名前"
-                        placeholder="仕立　一郎"
-                      />
-                    </dd>
-                  </dl>
-                </li>
-
-                <li class="form__item">
-                  <dl class="form__align">
-                    <dt class="form__label">
-                      <p class="form__label-text">
-                        メールアドレス<span>*</span>
-                      </p>
-                    </dt>
-                    <dd class="form__input">
-                      <input
-                        type="email"
-                        class="form__input-text"
-                        name="メールアドレス"
-                        placeholder="excitecode@suit.co.jp"
-                      />
-                    </dd>
-                  </dl>
-                </li>
-
-                <li class="form__item">
-                  <dl class="form__align">
-                    <dt class="form__label form__label--wide">
-                      <p class="form__label-text">
-                        お問い合わせの種類<span>*</span>
-                      </p>
-                    </dt>
-                    <dd class="form__check">
-                      <div class="form__check-item">
-                        <input
-                          type="radio"
-                          name="type"
-                          id="suit"
-                          value="オーダーメイドスーツ"
-                        />
-                        <label for="suit">オーダーメイドスーツ</label>
-                      </div>
-
-                      <div class="form__check-item">
-                        <input
-                          type="radio"
-                          name="type"
-                          id="notsuit"
-                          value="スーツ以外のアイテム"
-                        />
-                        <label for="notsuit">スーツ以外のアイテム</label>
-                      </div>
-
-                      <div class="form__check-item">
-                        <input
-                          type="radio"
-                          name="type"
-                          id="other"
-                          value="その他"
-                        />
-                        <label for="other">その他</label>
-                      </div>
-                    </dd>
-                  </dl>
-                </li>
-
-                <li class="form__item">
-                  <dl class="form__align form__align--start">
-                    <dt class="form__label form__label--margin">
-                      <p class="form__label-text">
-                        お問い合わせ内容<span>*</span>
-                      </p>
-                    </dt>
-                    <dd class="form__input">
-                      <textarea
-                        name="お問い合わせ内容"
-                        id=""
-                        class="form__textarea"
-                        placeholder="入力してください"
-                      ></textarea>
-                    </dd>
-                  </dl>
-                </li>
-              </ul>
-              <div class="form__button">
-                <button type="button">送信</button>
-              </div>
-            </div>
-          </form>
+          <p class="vision__text">
+            料理をするだけがキッチンではない。<br />
+            快適で豊かな空間があれば笑顔と会話が自然にあふれ、家族の絆を育む場所になります。<br />
+            わたしたちは、“いいキッチン”を通じて「心地いい家」「笑顔あふれる家」「家族が集まる家」を創造します。
+          </p>
         </div>
-      </div>
+      </section>
+
+      <!-- service -->
+      <section id="service" class="service">
+        <div class="service__inner inner">
+          <h2 class="service__heading heading heading--center">Service</h2>
+          <div class="service__cards">
+            <div class="service__card card">
+              <div class="card__img">
+                <img src="/images/service-img1.jpg" alt="" />
+              </div>
+              <p class="card-title">ご相談・見学会</p>
+            </div>
+
+            <div class="service__card card">
+              <div class="card__img">
+                <img src="/images/service-img2.jpg" alt="" />
+              </div>
+              <p class="card-title">デザイン・設計・施工</p>
+            </div>
+
+            <div class="service__card card">
+              <div class="card__img">
+                <img src="/images/service-img3.jpg" alt="" />
+              </div>
+              <p class="card-title">アフターサービス</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- news -->
+      <section id="news" class="news">
+        <div class="news__inner inner">
+          <h2 class="news__heading heading">News</h2>
+          <div class="news__items">
+            <div class="news__item news-item">
+              <time datetime="2022-11-23" class="news-item__date"
+                >2022.11.23</time
+              >
+              <a href="" class="news-item__title"
+                >【見学会開催のお知らせ】12月10日（土）・12月11日（日）の2日間開催します&#33;</a
+              >
+            </div>
+
+            <div class="news__item news-item">
+              <time datetime="2022-11-18" class="news-item__date"
+                >2022.11.18</time
+              >
+              <a href="#" class="news-item__title">
+                【施工事例】施工事例No68　S様邸の施工レポートを更新しました　
+              </a>
+            </div>
+
+            <div class="news__item news-item">
+              <time datetime="2022-11-04" class="news-item__date"
+                >2022.11.04</time
+              >
+              <a href="#" class="news-item__title">
+                【お知らせ】12月のお休みのお知らせ　
+              </a>
+            </div>
+
+            <div class="news__item news-item">
+              <time datetime="2022-10-26" class="news-item__date"
+                >2022.10.26</time
+              >
+              <a href="#" class="news-item__title">
+                【施工事例】施工事例No67　K様邸の施工レポートを更新しました　
+              </a>
+            </div>
+
+            <div class="news__item news-item">
+              <time datetime="2022-10-11" class="news-item__date"
+                >2022.10.11</time
+              >
+              <a href="#" class="news-item__title">
+                【見学会開催のお知らせ】11月3日（木）・11月4日（金）・11月5日（土）の3日間開催します!
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer">
-      <small class="footer__copyright"
-        >&copy;ExciteCode all rights reserved</small
+    <!-- contact -->
+    <div id="contact" class="contact">
+      <a href="" class="contact__button contact-button contact-button--wide"
+        >お問い合わせ</a
       >
+    </div>
+
+    <footer class="footer">
+      <div class="footer__copyright">&copy; 2023 ExciteCode</div>
     </footer>
   </body>
 </html>
