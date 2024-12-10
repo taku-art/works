@@ -297,7 +297,7 @@ select::-ms-expand {
 }
 
 .mv {
-  background-image: url(/images/mv-img.jpg);
+  background-image: url(https://taku-art.github.io/works1/images/mv-img.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -448,7 +448,7 @@ select::-ms-expand {
 }
 
 .contact {
-  background-image: url(/images/contact-img.jpg);
+  background-image: url(https://taku-art.github.io/works1/images/contact-img.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -460,7 +460,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .contact {
-    background-image: url(/images/contact-img-sp.jpg);
+    background-image: url(https://taku-art.github.io/works1/images/contact-img-sp.jpg);
   }
 }
 
