@@ -297,7 +297,7 @@ select::-ms-expand {
 }
 
 .mv {
-  background-image: url(/images/mv-img.jpg);
+  background-image: url(images/mv-img.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
